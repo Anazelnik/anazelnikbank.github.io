@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C6 Bank</title>
+</head>
+
+<body>
+    <header class="cabecalho-ex">
+        <a href="../indexex.html" class="cabecalho-logo-link">
+            <h1 class="cabecalho-logo-inicio">C6<span class="cabecalho-logo-final">Bank</span></h1>
+        </a>
+        <ul class="cabecalho-lista">
+            <li class="cabecalho-lista-item">
+                <a href="#" class="cabecalho-lista-link">Sobre</a>
+            </li>
+            <li class="cabecalho-lista-item">
+                <a href="#" class="cabecalho-lista-link">Serviços</a>
+            </li>
+            <li class="cabecalho-lista-item">
+                <input class="cabecalho-pesquisa" type="search" placeholder="Busque aqui">
+            </li>
+            <li class="cabecalho-lista-item">
+                <a href="#" class="cabecalho-lista-item__botao cabecalho-lista-item__botao--azul">Abrir conta</a>
+            </li>
+            <li class="cabecalho-lista-item">
+                <a href="#" class="cabecalho-lista-item__botao">Acessar conta</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="banner-titulo">
+        <h3 class="banner-titulo__second">Abra sua conta digital no C6 Bank!</h3>
+    </section>
+
+    <main class="container-menu">
+        <ul class="lista-menu">
+            <li>Inicio</li>
+            <li class="lista-menu__pagina">Abrir conta</li>
+        </ul>
+        <section class="principal-formulario">
+            <div class="formulario-container">
+                <img src="../img/" alt="Etapa um de três" class="formulario-etapas">
+                <h2 class="formulario-titulo-texto">Preencha os campos abaixo para criar sua conta corrente!</h2>
+            </div>
+
+            <form class="principal__formulario" data-formulario>
+                <fieldset class="formulario-campo">
+                    <label class="campo-escrita" for="nome">Nome</label>
+                    <input class="campo__escrita" type="text" name="nome" id="nome" minlength="3" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario-campo">
+                    <label class="campo-escrita" for="email">E-mail</label>
+                    <input class="campo__escrita" type="email" name="email" id="email" minlength="4" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario-campo">
+                    <label class="campo-escrita" for="rg">RG</label>
+                    <input class="campo__escrita campo__escrita--menor" type="text" name="rg" id="rg" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario-campo">
+                    <label class="campo-escrita" for="cpf">CPF(apenas números)</label>
+                    <input class="campo__escrita campo__escrita--menor" type="text" name="cpf" id="cpf" required
+                        minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario-campo">
+                    <label class="campo-escrita" for="aniversario">Data de nascimento</label>
+                    <input class="campo__escrita campo__escrita--menor" type="date" name="aniversario" id="aniversario"
+                        required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario-termos">
+                    <input class="termos__input" type="checkbox" name="termos" required />
+                    <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                        descrito na Política de Privacidade do banco.</p>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <div>
+                    <input class="formulario__botao" type="submit" value="Avançar" id="enviar" data-botao-enviar />
+                    <span class="mensagem-erro"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <section class="rodape-empresa">
+            <h2 class="rodape-titulo">O C6 Bank</h2>
+            <ul class="rodape-lista">
+                <li>
+                    <a href="#" class="rodape-lista-link">Sobre</a>
+                </li>
+                <li">
+                    <a href="#" class="rodape-lista-link">Perguntas frequentes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="rodape-lista-link">Carreira</a>
+                    </li>
+            </ul>
+        </section>
+
+        <section class="rodape-servicos">
+            <h2 class="rodape-titulo">Serviços</h2>
+            <ul class="rodape-lista">
+                <li>
+                    <a href="#" class="rodape-lista-link">Conta corrente</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-lista-link">Cartão de crédito</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-lista-link">Investimentos</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape-contato">
+            <h2 class="rodape-titulo">Contato</h2>
+            <ul class="rodape-lista">
+                <li>
+                    <a href="#" class="rodape-lista-link">Fale conosco: 0800 352 995 01</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-lista-link">SAC@c6bank.com.br</a>
+                </li>
+                <li>
+                    <a href="#" class="rodape-lista-link">ouvidoria@c6bank.com.br</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape-redes">
+            <h2 class="rodape-titulo">Redes sociais</h2>
+            <ul class="rodape-lista redes-sociais-lista">
+                <li><img src="" alt="ícone do facebook"></li>
+                <li><img src="" alt="ícone do youtube"></li>
+                <li><img src="" alt="ícone do whatsapp"></li>
+                <li><img src="" alt="ícone do instagram"></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="/js/script.js" type="module"></script>
+</body>
+
+</html>
